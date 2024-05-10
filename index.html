@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="main-container">
+        <div id="page1">
+              <!-- This is navbar part -->
+            <nav>
+                <div class="logo">  
+                    <img src="./img/fitness logo.png" alt="company logo">
+                </div>
+                <div class="nav-right">
+                    <a class="span" href="index.html">Home</a>
+                    <a class="span" href="classes.html">Classes</a>
+                    <a class="span" href="products.html">Products</a>
+                    <a class="span" href="blogs.html">Blogs</a>
+                    <button>Join Us</button>   
+                </div>
+            </nav>
+            <div id="popup-form">
+                <h2 >Subscription Plan</h2> 
+                <form class="form-container"> 
+                        <label class="form-label" for="name">Fullname: </label> <br>
+                    <input type="text" id="inp"  class="form-input" type="text" placeholder="Enter Your Username" id="name" name="name" required><br> 
+                        <label class="form-label" for="email">Email:</label> <br> 
+                    <input type="text" id="inp"  class="form-input" type="email"	placeholder="Enter Your Email" id="email"	name="email" required> <br>
+                        <label class="form-label " for="mobile">Contact No: </label> <br>
+                    <input type="text" id="inp"  class="form-input" type="text" placeholder="Enter Your mobile number" id="mobilenum" name="mobilenum" required><br>
+               
+                    <label class="form-label " for="duration">Duration: </label>  
+                  <div class="duration">
+                    <input type="radio"> <span style="margin-right: 4rem;">Monthly</span>
+                    <input type="radio"> <span>Yearly</span>
+                  </div> <br>
+                    <label class="form-label " for="payment">Modes Of Payment: </label>  <br>
+                   <div class="duration">
+                    <input type="radio"> <span style="margin-right: 4rem;">Cash</span>
+                    <input type="radio"> <span>Online</span>
+                   </div>
+                   <br>
+                 
+                   <label class="form-label" for="training">Personal training : </label><br>
+                   <div  class="duration">
+                   <input type="radio"> <span style="margin-right: 4rem;">Required</span> 
+                    <input type="radio"> <span>Not Required</span>
+                   </div>
+                   <br>
+    
+                 <div style="color: rgb(0, 0, 0); margin-bottom: 0.5rem;">  <input type="checkbox"> I accept all the terms and condition</div>
+                     
+                    <button type="submit" class="btn-submit" type="submit"> Buy Plans</button> 
+                    <button type="close" class="btn-close-popup"
+                         onclick="togglePopup()"> Close 
+                 </button> 
+                </form> 
+     
+            </div>
+            <div id="section-2">     <!--this is second section of page-1 -->
+               <div class="mid-div">
+                <h1>Revitalize <br> your body</h1>
+                <p>Fall in love eith talking care of yourself, <br> mind,body,and spirit</p>
+                <div class="bt-div"> <!--this is a botton div-->
+                    <button class="btn" >Get Sarted</button>
+                    <button class="btn" ><p>Free Trail</p><i class="ri-arrow-right-line"></i></button>
+                </div>
+               </div>
+            </div>
+            <div id="bottom"> <!-- this is bottom section to show a social media profiles -->
+                <i class="ri-whatsapp-line"></i>
+                <i class="ri-facebook-circle-fill"></i>
+                <i class="ri-youtube-fill"></i>
+            </div>
+        </div>
+        <div id="page2">
+            <div class="items-container">
+                <div  class="items" id="btm-line">
+                    <img src="./img/weight-removebg-preview.png" alt="">
+                    <h4>Weight Loss</h4>
+                </div>
+                <div  class="items" id="btm-line" > <!--divition tage use in bottm-line hideing purpus-->
+                    <img src="./img/yoga1-removebg-preview.png" alt="">
+                    <h4>Classic Yoga</h4>
+                </div>
+                <div  class="items" id="right-line">
+                    <img src="./img/cycle-removebg-preview.png" alt="">
+                    <h4>Cycling</h4>
+                </div>
+                <div  class="items">
+                    <img src="./img/body_build-removebg-preview.png" alt="">
+                    <h4>Bodybuilding</h4>
+                </div>
+                <div  class="items">
+                    <img src="./img/images-removebg-preview (2).png" alt="">
+                    <h4>Hypertrophy</h4>
+                </div>
+                <div  class="items" id="right-lines">
+                    <img src="./img/run-removebg-preview.png" alt="">
+                    <h4>Running</h4>
+                </div>
+            </div>
+        </div>
+        <div id="page3">
+            <h1>Subscription Plans</h1>
+            <div class="card-container">
+                <div class="cards">
+                    <h3>Basic <br> <span>for 12 months</span></h3>
+                    <h4>800/month <br> <span>for streaming</span></h4>
+                    <button>Select Plan</button>
+                </div>
+                <div class="cards">
+                    <h3>Intermidiate <br> <span>for 12 months</span></h3>
+                    <h4>1000/month <br> <span>for streaming</span></h4>
+                    <button>Select Plan</button>
+                </div>
+                <div class="cards">
+                    <h3>Advance <br> <span>for 12 months</span></h3>
+                    <h4>1500/month <br> <span>for streaming</span></h4>
+                    <button>Select Plan</button>
+                </div>
+            </div>
+        </div>
+        <div id="page4">
+            <div class="mid-container">
+                <div class="sections">
+                    <img src="./img/gm-removebg-preview.png" alt="">
+                    <h1>Good Managment</h1>
+                    <p>What hurts today makes you stranger tomorrow</p>
+                </div>
+                <div class="sections">
+                    <img src="./img/ps1-removebg-preview.png" alt="">
+                    <h1>Practies Session</h1>
+                    <p>Motivation is whats gets you started.</p>
+                </div>
+                <div class="sections">
+                    <img src="./img/ft1-removebg-preview.png" alt="">
+                    <h1>Personal Trainers</h1>
+                    <p>If it doesn't challange you, it wan't change you</p>
+                </div>
+            </div>
+            <div class="last-section"></div>
+        </div>
+        <div id="page5">
+            <div class="card-section">
+                <div class="cards-div">
+                    <div class="img-div">
+                        <img src="./img/a3.jpg" alt="">
+                    </div>
+                    <h1>Best place for body transformation</h1>
+                </div>
+                <div class="cards-div">
+                    <div class="img-div">
+                        <img src="./img/img5.jpg" alt="">
+                    </div>
+                    <h1>Best Cross Fit gym in this area</h1>
+                </div>
+                <div class="cards-div">
+                    <div class="img-div">
+                        <img src="./img/e3.jpeg" alt="">
+                    </div>
+                    <h1>Best Bodybuilding gym in this city it has all required equipment</h1>
+                </div>
+            </div>
+        </div>
+        <div id="footer-page">
+            <div class="top-part">
+                <div id="sections-part">
+                    <img src="./img/fitness logo.png" alt="fitness-logo">
+                    <h4>Prioritize Your Fitness Goals <br> with our world class services</h4>
+                </div>
+                <div id="sections-part">
+                    <table>
+                        <thead class="thead-line">
+                          <tr>
+                            <th>COMPANY</th>
+                            <th>CONTACT</th>
+                            <th>MORE</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>About</td>
+                            <td>Careers</td>
+                            <td>Blogs</td>
+                          </tr>
+                          <tr>
+                            <td>Help/FAQs</td>
+                            <td>Press</td>
+                            <td>Mobile</td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <td>Program</td>
+                            <td>Plans</td>
+                            <td>Method</td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                </div>
+                <div id="sections-part">
+                    <h1>popular-tags</h1>
+                    <div class="popular-tags">
+                        <div class="tag">ABS</div>
+                        <div class="tag">Workout</div>
+                        <div class="tag">Nutrition</div>
+                        <div class="tag">GYM</div>
+                        <div class="tag">Boxing Trainers</div>
+                        <div class="tag">Facilities</div>
+                      </div>
+                </div>
+            </div>
+            <div class="bottom-part">
+                <h3>CopyRight  All  Rights  Reserved</h3>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>

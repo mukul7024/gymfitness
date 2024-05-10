@@ -1,0 +1,351 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    width: 100%;
+}
+#main-container{
+    width: 100%;
+}
+#page1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/bg\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+nav{
+    width: 100%;
+    height: 10%;
+    background-color: #524D4D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img{
+    width: 200px;
+    margin-top: 15px;
+}
+.nav-right a{
+    text-decoration: none;
+    color: #fff;
+    position: static;
+    gap: 20;
+    padding: 0 20px;
+}
+.nav-right button{
+    padding: 8px 18px;
+    background-color: #FFA500;
+    color: #000;
+    border: none;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 2px 2px rgb(60, 48, 57);
+}
+.nav-right button:hover{
+    box-shadow: none;
+}
+.nav-right a{
+    position: relative;
+}
+
+.nav-right{
+    padding: 0 20px;
+}
+
+a.span::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 70%;
+    height: 2px;
+    background-color: #FFA500;
+    border-radius: 100px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.35s ease-in-out;
+}
+a.span:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+h1{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    font-size: 9vh;
+    color:#fff ;
+    text-align: center;
+    /* margin-top: 15px; */
+    transition: all linear 0.2s;
+}
+#page1 h1:hover{
+    color: #FFA500;
+}
+#page1 .line-div{
+    position: absolute;
+    top: 26%;
+    left: 52%;
+    width: 25%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+}
+#cards-container{ 
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 80%;
+    height: 60vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.cards{
+    width: 30%;
+    height: 60vh;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.cards .img-div{
+    width: 70%;
+    height: 35vh;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 10px;
+    border: 1px solid white;
+   
+}
+.img-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all linear 0.5s;
+
+}
+.img-div img:hover{
+    scale: 1.2;
+}
+.cards h6{
+    font-size: 3vh;
+    color: #fff;
+}
+.cards button{
+    padding: 18px 58px;
+    background-color: rgba(175, 30, 30, 0.718);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+}
+/* -----------------page-2----------------- */
+#page2{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color:#ffa600b4;
+}
+#page2 h2{
+    text-align: center;
+    position: absolute;
+    color: #fff;
+    top: 5%;
+    left: 35%;
+    font-size: 9vh;
+    transition: all linear 0.3s;
+}
+#page2 h2:hover{
+    color: #FFA500;
+}
+#page2 .line{
+    height: 5px;
+    border-radius: 10px;
+    width: 36%;
+    background-color: white;
+    position: absolute;
+    top: 17%;
+    left: 35%;
+}
+.cards-div{
+    width: 30%;
+    height: 60vh;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.cards-div .img-box{
+    width: 60%;
+    height: 45vh;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 20px;
+   
+}
+.img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all linear 0.5s;
+
+}
+.img-box img:hover{
+    scale: 1.2;
+}
+.cards h6{
+    font-size: 3vh;
+    color: #fff;
+}
+.cards-div button{
+    padding: 8px 48px;
+    background-color: #4D4848;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+}
+#page1 video{
+    object-fit: cover;
+    object-position: center;
+    zoom: 2%;    
+    filter: blur(2px);
+}
+/* ------------------page-3------------------------- */
+#page3{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+}
+video{
+    object-fit: cover;
+    object-position: center;
+}
+/* -------------------------- footer page  ----------------- */
+
+#footer-page{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+#footer-page .top-part{
+    width: 100%;
+    height: 85vh;
+    background-color: #1b1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.top-part #sections-part{
+    position: relative;
+    width: 30%;
+    height: 90%;
+    background-color: #1b1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#sections-part h1{
+    position: relative;
+    color: #FFA500;
+    font-size: 5vh;
+    top: 0px;
+    left: 25px;
+
+    
+}
+#sections-part img{
+    width: 50%;
+    position: absolute;
+    left: 15%;
+    top: -20%;
+    width: 73%;
+}
+#sections-part h4{
+    position: absolute;
+    font-size: 3vh;
+    color: #FFA500;
+    width: 96%;
+    bottom: 40px;
+    text-align: center;
+    /* bottom: 0; */
+}
+table{
+    position: absolute;
+    gap: 30px;
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    
+}
+thead{
+    font-size: 4vh;
+    word-spacing: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+tr{
+    font-size: 3vh;
+}
+.popular-tags{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.tag {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 4px;
+    padding: 6px 40px;
+    margin-bottom: 4%;
+}
+.tag:hover{
+    background-color: #FFA500;
+
+}
+
+#footer-page .bottom-part{
+    width: 100%;
+    height: 15vh;
+    background-color: #FFA500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#footer-page .bottom-part h3{
+    font-style: bold;
+    word-spacing: 2px;
+}
